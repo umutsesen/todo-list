@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Our Todo List </title>
+        <link rel='stylesheet' href='style.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+    </head>
+    <body>
+        <div id='content'>
+            <div id='inside'>
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to the Best Todo List ever</h1>
+            <p class="lead">With its simple structure, you can create new projects, or todo lists easily</p>
+            <hr class="my-4">
+          </div>
+        <div id='projects'>
+            <button class="btn btn-primary" id='projectform'>Add a new project</button>
+            
+
+        </div>
+        
+        <div id='project' class="form-check form-check-inline">
+            <input class="form-control" type='text' id='projecttitle'>
+            <br>
+            <button class="btn btn-primary" id='addproject'> Add project</button>
+        </div>
+        <button class="btn btn-primary" onclick="todolistform.style.display ='inline-block'" id="todoadder">Add a New Todo </button>
+    <div class="form-check form-check-inline" id='todolistform'>
+        <input class="form-control" type='text' id='title'>
+        <br>
+        <input class="form-control" type='text' id='description'>
+        <br>
+        <input class="form-control" type='date' id='date'>
+        <br>
+        <input class="form-check-input" type="radio" id="urgent" name="priority" value="urgent">
+        <label class="form-check-label" for="urgent">Urgent  </label>
+        <input class="form-check-input" type="radio" id="normal" name="priority" value="normal">
+        <label class="form-check-label" for="normal">Normal  </label>
+        <input class="form-check-input" type="radio" id="low" name="priority" value='low'>
+        <label class="form-check-label" for="low">Low  </label>
+        <br>
+        <br>
+        <button class="btn btn-primary" id='addtask'> Add a new task</button>
+    </div>
+    <div id='task'>
+        
+    
+</div>
+</div>
+</div>
+
+    
+        <script src="main.js"></script>
+    </body>
+</html>

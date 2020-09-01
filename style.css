@@ -10,6 +10,7 @@ body {
     margin: 3%;
     overflow: auto;
     min-height: 70%;
+    border-radius: 15px;
 }
 #inside {
     background: white;
